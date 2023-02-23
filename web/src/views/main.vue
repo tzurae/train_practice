@@ -32,14 +32,14 @@ export default defineComponent({
   },
   setup() {
     const count = ref(0);
-    axios.get("/member/member/count").then((response) => {
-      let data = response.data;
-      if (data.success) {
-        count.value = data.content;
-      } else {
-        notification.error({ description: data.message });
-      }
-    });
+    // axios.get("/member/member/count").then((response) => {
+    //   let data = response.data;
+    //   if (data.success) {
+    //     count.value = data.content;
+    //   } else {
+    //     notification.error({ description: data.message });
+    //   }
+    // });
 
     return {
       count
